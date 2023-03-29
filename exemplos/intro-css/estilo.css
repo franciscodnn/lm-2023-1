@@ -1,0 +1,14 @@
+h2 {
+  color: orange;
+  border-width: 1px;
+  border-color: black;
+  border-style: solid;
+}
+
+p {
+  font-size: 16pt;
+}
+
+li {
+  text-decoration: underline;
+}

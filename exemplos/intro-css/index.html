@@ -1,0 +1,81 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Introdução a CSS</title>
+    <link href="estilo.css" rel="stylesheet" />
+
+    <!-- CSS interno -->
+    <style>
+      #id-experiencia {
+        font-style: italic;
+        color: red;
+      }
+
+      .italico {
+        font-style: italic;
+      }
+
+      .azul {
+        color: rgb(0, 0, 255);
+      }
+    </style>
+  </head>
+  <body>
+    <!-- <h1><font color="red">Francisco</font></h1> -->
+    <h1 class="italico azul">Francisco</h1>
+
+    <section>
+      <p><strong>Nascimento:</strong> <em>01/01/1970</em></p>
+      <p><strong>Email:</strong> <em>dantas.nobre@ifpb.edu.br</em></p>
+      <p><strong>Telefone:</strong> <em>(83)99999-9999</em></p>
+      <img src="img/avatar.png" width="8%" />
+      <p>Lorem ipsum</p>
+    </section>
+
+    <section>
+      <h2 class="italico" style="font-family: Arial">Endereço</h2>
+      <hr />
+      <!-- DL -> Definition List -->
+      <dl>
+        <!-- DT -> Definition Term -->
+        <dt><strong>Rua</strong></dt>
+        <!-- DD -> Definition Description -->
+        <dd>Av. 1o de Maio, 720</dd>
+        <dt><strong>Cidade</strong></dt>
+        <dd>João Pessoa, PB</dd>
+        <dt><strong>Bairro</strong></dt>
+        <dd>Jaguaribe</dd>
+      </dl>
+    </section>
+
+    <section>
+      <!-- CSS inline / CSS em linha-->
+      <h2 id="id-experiencia" class="azul">Experiência</h2>
+      <hr />
+      <dl>
+        <dt>
+          <a href="https://www.ifpb.edu.br/institucional/sobre-o-ifpb">
+            <strong>Reitoria do IFPB</strong></a
+          >
+        </dt>
+        <dd>Desenvolvedor Front-End</dd>
+        <dd>2020 - 2023</dd>
+      </dl>
+    </section>
+
+    <section>
+      <h2 class="italico">Competências</h2>
+      <hr />
+      <!-- UL -> Unordered List -->
+      <ul>
+        <li>JavaScript</li>
+        <li>CSS</li>
+        <li>HTML</li>
+        <li>XML</li>
+      </ul>
+    </section>
+  </body>
+</html>
