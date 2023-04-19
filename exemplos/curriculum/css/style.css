@@ -1,0 +1,7 @@
+h1 a:link {
+  text-decoration: none;
+}
+
+a:hover {
+  text-decoration: overline;
+}
