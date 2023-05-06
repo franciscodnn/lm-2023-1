@@ -1,0 +1,84 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Tabelas</title>
+    <style>
+        table, td, th {
+            border: 1px solid black;
+            border-collapse: collapse;
+        }
+
+        td, th {
+            padding: 10px 15px;
+        }
+        .cabecalho-tabela {
+            background-color: #BBB;
+        }
+
+        /* .linha-laranja {
+            background-color: orange;
+        } */
+
+        tbody tr:nth-child(even){
+            background-color: orange;
+        }
+    </style>
+</head>
+<body>
+    <table>
+        <thead>
+            <tr class="cabecalho-tabela"> <!-- Table Row -->
+                <th>Curso</th> <!-- Table Head -->
+                <th>Carga Horária</th>
+                <th>Modalidade</th>
+            </tr>
+        </thead>
+        <tbody>
+            <tr>
+                <td>TSI</td> <!-- Table Data -->
+                <td>3400h</td>
+                <td>Tecnólogo</td>
+            </tr>
+            <tr>
+                <td>Redes de Computadores</td>
+                <td>3400h</td>
+                <td>Tecnólogo</td>
+            </tr>
+            <tr>
+                <td>Integrado em Informática</td>
+                <td>2800h</td>
+                <td>Técnico Integrado</td>
+            </tr>
+            <tr>
+                <td>Mestrado em Informática</td>
+                <td>1800h</td>
+                <td>Pós-Graduação</td>
+            </tr>
+            <tr>
+                <td>Integrado em Música</td>
+                <td>2800h</td>
+                <td rowspan="2">Técnico Integrado</td>
+            </tr>
+            <tr>
+                <td>Integrado em Edificações</td>
+                <td>2500h</td>
+                <!-- <td>Técnico Integrado</td> -->
+            </tr>
+            <tr>
+                <td>Engenharia Elétrica</td>
+                <td>3800h</td>
+                <td>Bacharelado</td>
+            </tr>
+        </tbody>
+        <tfoot>
+            <tr>
+                <td></td>
+                <td colspan="3">*Cursos são restritos ao IFPB - Campus João Pessoa.</td>
+            </tr>
+        </tfoot>
+    </table>
+</body>
+</html>
