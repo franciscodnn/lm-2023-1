@@ -1,0 +1,38 @@
+header,
+main {
+  width: 90%;
+  margin: auto;
+}
+
+header {
+  /* border-bottom: 1px solid #444; */
+  margin-bottom: 25px;
+}
+
+main {
+  height: 650px;
+  display: flex;
+
+  flex-direction: row;
+  flex-wrap: wrap;
+  justify-content: space-around;
+  align-items: center;
+  /* align-content: space-around; */
+}
+
+main > section {
+  border-bottom: 1px solid #444;
+  padding: 10px;
+  background-color: #ddd;
+
+  flex-basis: 350px;
+}
+
+main > section:nth-child(3) {
+  background-color: orange;
+  /* flex-grow: 1; */
+}
+
+main > section:nth-child(2) {
+  /* flex-grow: 1; */
+}
