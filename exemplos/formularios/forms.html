@@ -1,0 +1,141 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Formulários</title>
+    <style>
+      div {
+        margin: 10px 0;
+      }
+
+      fieldset {
+        margin: 15px 0;
+      }
+    </style>
+  </head>
+  <body>
+    <h1>Formulários</h1>
+    <form action="hipotetico.php" method="GET">
+      <fieldset>
+        <legend>Dados Pessoais</legend>
+        <div>
+          <!-- <p><label for="id-nome">Nome completo(*):</label></p> -->
+          <input
+            type="text"
+            name="nome"
+            id="id-nome"
+            placeholder="Nome completo(*)"
+            required
+          />
+        </div>
+
+        <div>
+          <p><label for="idade">Idade:</label></p>
+          <input
+            type="number"
+            name="idade"
+            id="idade"
+            min="0"
+            max="150"
+            style="width: 40px"
+          />
+        </div>
+
+        <div>
+          <!-- <p><label for="email">E-mail:</label></p> -->
+          <input placeholder="E-mail" type="email" name="email" id="email" />
+        </div>
+
+        <div>
+          <p><label for="foto">Envie sua foto</label></p>
+          <input type="file" name="foto" id="foto" />
+        </div>
+
+        <div>
+          <p><label for="data-nascimento">Data de nascimento</label></p>
+          <input type="date" name="data" id="data-nascimento" />
+        </div>
+
+        <div>
+          <p><label for="senha">Senha:</label></p>
+          <input type="password" name="senha" id="senha" />
+        </div>
+      </fieldset>
+
+      <fieldset>
+        <legend>Dados acadêmicos</legend>
+        <div>
+          <p><label for="">Escolha seu curso:</label></p>
+          <select name="curso">
+            <optgroup label="Tecnologia">
+              <option value="tsi">Sistemas para Internet</option>
+              <option value="redes">Redes de Computadores</option>
+            </optgroup>
+
+            <optgroup label="Licenciatura">
+              <option value="lic-quimica">Licenciatura em Química</option>
+            </optgroup>
+          </select>
+        </div>
+
+        <!-- 
+      <div>
+        <p><label for="">Escolha seu curso:</label></p>
+        <input type="radio" name="curso" value="tsi" id="tsi" checked />
+        <label for="tsi">Sistemas para Internet</label>
+        <br />
+        <input type="radio" name="curso" value="redes" id="redes" />
+        <label for="redes">Redes de Computadores</label>
+        <br />
+        <input type="radio" name="curso" value="eletrica" id="ee" />
+        <label for="ee">Engenharia Elétrica</label>
+        <br />
+      </div>
+    -->
+
+        <!-- <div>
+        <p>Selecione as disciplinas a cursar:</p>
+        <select name="disciplinas-select" multiple>
+          <option value="lm">LM</option>
+          <option value="port">Português</option>
+          <option value="ape">APE</option>
+          <option value="mat">Matemática</option>
+        </select>
+      </div> -->
+
+        <div>
+          <p>Seleciona as disciplinas a cursar:</p>
+          <input type="checkbox" name="disciplinas" value="lm" id="lm" />
+          <label for="">LM</label>
+          <br />
+          <input type="checkbox" name="disciplinas" value="port" id="port" />
+          <label for="">Português</label><br />
+          <input type="checkbox" name="disciplinas" value="ape" id="ape" />
+          <label for="">APE</label>
+          <br />
+          <input type="checkbox" name="disciplinas" value="redes" id="redes" />
+          <label for="">Redes</label>
+          <br />
+          <input type="checkbox" name="disciplinas" value="mat" id="mat" />
+          <label for="">Matemática</label>
+          <br />
+          <input type="checkbox" name="disciplinas" value="fc" id="fc" />
+          <label for="">Fundamentos de Computação</label><br />
+        </div>
+
+        <div>
+          <p><label for="perfil">Escreva sobre seu perfil:</label></p>
+          <textarea name="perfil" id="perfil" cols="50" rows="8"></textarea>
+        </div>
+      </fieldset>
+
+      <div>
+        <!-- <input type="submit" value="Enviar!" /> -->
+        <button type="submit">Enviar!</button>
+        <input type="reset" value="Limpar" />
+      </div>
+    </form>
+  </body>
+</html>
